@@ -1936,7 +1936,7 @@ if (isset($_GET['view'])) {
                         // php highlight
                         $content = highlight_string($content, true);
                     } else {
-                        $content = '<pre>' . fm_enc($content) . '</pre>';
+                        $content = '<pre class="plain-text-preview">' . fm_enc($content) . '</pre>';
                     }
                     echo $content;
                 }
@@ -4738,7 +4738,7 @@ function fm_show_header_login()
                     border-color: #79755e;
                 }
 
-                .theme-dark .file-preview-content pre {
+                .theme-dark pre.plain-text-preview {
                     background-color: #101518;
                     color: #CFD8DC;
                     padding: 1rem;
